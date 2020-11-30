@@ -20,7 +20,7 @@ std::vector< char > foo(std::list< Human >& people)
     }
 
     for (auto it1 = test.crbegin(); it1 != test.crend(); ++it1) {
-        test_rev.push_back(*it1);
+        test_rev.emplace_back(*it1);
     }
     return test_rev;
 }
